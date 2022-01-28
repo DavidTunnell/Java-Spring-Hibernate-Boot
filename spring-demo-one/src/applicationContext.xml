@@ -6,6 +6,10 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- load properties file -->
+	<context:property-placeholder location="classpath:sport.properties"/>
+	
 
     <bean id="myLoggerConfig" class="com.davidtunnell.springdemo.MyLoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINE" />
@@ -25,8 +29,8 @@
      	<!-- setup setter injection (will call setFortuneService)-->
     	<property name="fortuneService" ref="myFortuneService"/>
     	 <!-- injecting literal string values-->
-    	<property name="emailAddress" value="bestfootball@coach.com"/>
-    	<property name="team" value="The Exploding Sheep"/>
+    	<property name="emailAddress" value="${foo.email}"/>
+    	<property name="team" value="${foo.team}"/>
     </bean>
 </beans>
 
