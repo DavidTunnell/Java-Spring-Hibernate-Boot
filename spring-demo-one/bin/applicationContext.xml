@@ -16,7 +16,7 @@
     	<property name="printedLoggerLevel" value="FINE"/>
     </bean>
     
-    <bean id="myFortuneService" class="com.davidtunnell.springdemo.HappyFortuneService">
+    <bean id="myFortuneService" class="com.davidtunnell.springdemo.RandomFortuneService">
     </bean>
     
    
