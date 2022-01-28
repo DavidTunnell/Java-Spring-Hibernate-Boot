@@ -12,7 +12,13 @@
     	<property name="printedLoggerLevel" value="FINE"/>
     </bean>
     
-    <bean id="myCoach" class="com.davidtunnell.springdemo.FootballCoach">
+    <bean id="myFortuneService" class="com.davidtunnell.springdemo.HappyFortuneService">
+    </bean>
+    
+   
+    <bean id="myCoach" class="com.davidtunnell.springdemo.TrackCoach">
+     	<!-- setup constructor injection -->
+    	<constructor-arg ref="myFortuneService"/>
     </bean>
 </beans>
 

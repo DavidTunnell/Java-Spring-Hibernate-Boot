@@ -1,6 +1,7 @@
 # Custom
 .settings
 bin
+.metadata
 
 # Logs
 
