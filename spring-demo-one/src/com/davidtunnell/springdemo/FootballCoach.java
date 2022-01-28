@@ -2,6 +2,30 @@ package com.davidtunnell.springdemo;
 
 public class FootballCoach implements Coach {
 	
+	private String emailAddress;
+	private String team;
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("Inside FootballCoach setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+
+
+	public String getTeam() {
+		return team;
+	}
+
+
+	public void setTeam(String team) {
+		System.out.println("Inside FootballCoach setTeam");
+		this.team = team;
+	}
+
+
 	public FootballCoach() {
 		System.out.println("Inside FootballCoach no arg constructor");
 	}

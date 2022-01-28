@@ -24,6 +24,9 @@
     <bean id="myFootballCoach" class="com.davidtunnell.springdemo.FootballCoach">
      	<!-- setup setter injection (will call setFortuneService)-->
     	<property name="fortuneService" ref="myFortuneService"/>
+    	 <!-- injecting literal string values-->
+    	<property name="emailAddress" value="bestfootball@coach.com"/>
+    	<property name="team" value="The Exploding Sheep"/>
     </bean>
 </beans>
 
