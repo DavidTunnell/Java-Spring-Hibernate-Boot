@@ -24,5 +24,13 @@ public class TrackCoach implements Coach {
 		// TODO Auto-generated method stub
 		return "Just Do It: " + fortuneService.getFortune();
 	}
-
+	//add an init hook
+	public void doMyStartupStuff() {
+		System.out.println("doMyStartupStuff hook run");
+	}
+	
+	//destroy end of life cycle hook
+	public void doMyCleanupStuff() {
+		System.out.println("doMyCleanupStuff hook run");
+	}
 }
